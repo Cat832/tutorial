@@ -160,6 +160,18 @@ for(i = 0; i <= 3; i++){alert(i)}</code></pre>
 1
 2
 3</code></pre>
+            <p><b>Betere uitleg:</b></p>
+            <p><code class="language-javascript">for</code></p>
+            Haakjes:
+            <pre><code class="language-javascript">for()</code><pre>
+            <p>Aan het begin van deze loop, doe dit.</p>
+            <p>Puntkomma (;)</p>
+            <p>Deze loop is geactiveert als dit waar is.</p>
+            <p>Puntkomma</p>
+            <p>Aan het eind van de code in de <code class="language-javascript">{}</code> doe dit</p>
+            <p></p>
+            <p>Krullige haakjes</p>
+            <p>Je code.</p>
             <h3>While</h3>
             <p>De while loop is geactiveert als het gene wat tussen de () waar (<code class="language-javascript">true</code>) is</p>
             <p>Voor de duidelijkheid:</p>
@@ -175,8 +187,9 @@ for(i = 0; i <= 3; i++){alert(i)}</code></pre>
 1
 2
 3</code></pre>
+            <button onclick="p8()">Ga verder</button>
         </div>
-        <div id="P8" style="font-family:Arial, Helvetica, sans-serif; display: block;">
+        <div id="P8" style="font-family:Arial, Helvetica, sans-serif; display: none;">
             <h1>Functies</h1>
             <p>Bij alles, heeft een functie ook () en {}</p>
             <p>Dit is een voorbeeld van een functie:</p>
@@ -221,6 +234,10 @@ naam('Hallo!') //'Hallo!' is nu variabele. Hij alert dus 'Hallo!'</code></pre>
             function p7(){
                 document.getElementById("P6").style.display = "none"
                 document.getElementById("P7").style.display = "block"
+            }
+            function p8(){
+                document.getElementById("P7").style.display = "none"
+                document.getElementById("P8").style.display = "block"
             }
         </script>
     </body>
