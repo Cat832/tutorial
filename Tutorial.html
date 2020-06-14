@@ -111,10 +111,15 @@ if (MyVar >= 1){alert('Jep')} //alerts 'Jep'</code></pre>
 if (MyVar > 0){alert('Jep')} //alerts 'Jep'</code></pre>
             <pre><code class="language-javascript">var MyVar = 1;
 if (MyVar < 0){alert('Jep')} //alerts 'Jep'</code></pre>
+            <pre><code class="language-javascript">var MyVar = 1;
+if (MyVar > 0 || MyVar == 1231){alert('Jep')} //alerts 'Jep'</code></pre>
+            <pre><code class="language-javascript">var MyVar = 1;
+if (MyVar > 0 && MyVar == 1){alert('Jep')} //alerts 'Jep'</code></pre>
+            <button onclick="">Ga verder</button>
         </div>
         <div id="P6" style="font-family:Arial, Helvetica, sans-serif; display: none;">
-        <p><i>Expressies</i> zijn stukjes code die waar (<code class="language-javascript">true</code>) of onwaar (<code class="language-javascript">false</code>) zijn.</p>
-        </div>
+            <p><i>Expressies</i> zijn stukjes code die waar (<code class="language-javascript">true</code>) of onwaar (<code class="language-javascript">false</code>) zijn.</p>
+            </div>
         <script>
             function p2(){
                 document.getElementById("P1").style.display = "none"
@@ -131,7 +136,9 @@ if (MyVar < 0){alert('Jep')} //alerts 'Jep'</code></pre>
             function p5(){
                 document.getElementById("P4").style.display = "none"
                 document.getElementById("P5").style.display = "block"
-                //tijdelijk:
+            }
+            function p6(){
+                document.getElementById("P5").style.display = "none"
                 document.getElementById("P6").style.display = "block"
             }
         </script>
