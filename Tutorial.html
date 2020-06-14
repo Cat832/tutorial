@@ -112,6 +112,14 @@ if (MyVar < 0){alert('Jep')} //alerts 'Jep'</code></pre>
 if (MyVar > 0 || MyVar == 1231){alert('Jep')} //alerts 'Jep'</code></pre>
             <pre><code class="language-javascript">var MyVar = 1;
 if (MyVar > 0 && MyVar == 1){alert('Jep')} //alerts 'Jep'</code></pre>
+            <p>Goed, nu je de if kent, laten we naar de else gaan.</p>
+            <p><b>Stel:</b> je wilt weten of 1 1 is. Zoja, alert 'Wiskunde is makkelijk!' Anders alert 'Geen wiskunde'</p>
+            <p>Doe dat zo:</p>
+            <pre><code class="language-javascript">if (1 == 1){alert('Wiskunde is makkelijk!')}
+else{alert('Geen wiskunde')} //alerts 'Wiskunde is makkelijk!'</code></pre>
+            <p><b>Maar;</b> als je het zo doet: alert hij 'Geen wiskunde'</p>
+            <pre><code class="language-javascript">if (1 != 1){alert('Wiskunde is makkelijk!')}
+else{alert('Geen wiskunde')}</code></pre>
             <button onclick="p6()">Ga verder</button>
         </div>
         <div id="P6" style="font-family:Arial, Helvetica, sans-serif; display: none;">
@@ -132,7 +140,41 @@ if (MyVar > 0 && MyVar == 1){alert('Jep')} //alerts 'Jep'</code></pre>
             <p>Aftrekken: gebruik -</p>
             <pre><code class="language-javascript">alert(21 - 2) //19</code></pre>
             <p>Machtsverheffen: gebruik **</p>
-            <pre><code class="language-javascript">alert(3 ** 2) //9</code></pre>        
+            <pre><code class="language-javascript">alert(3 ** 2) //9</code></pre>
+            <p></p>
+            <button onclick="p7()">Ga verder</button>        
+        </div>
+        <div id="P7" style="font-family:Arial, Helvetica, sans-serif; display: none;">
+            <h1>Loops</h1>
+            <p><i>Loops</i> zijn herhalingen. Je hebt de for en de while loop</p>
+            <h3>For</h3>
+            <p>Een for loop schrijf je zo: for(doe je bij begin; als dit zo is, eindig de loop; bij het eind doe dit.)</p>
+            <p>Voor de duidelijkheid:</p>
+            <pre><code class="language-javascript">var i;
+for(i = 0; i <= 3; i++){alert(i)}</code></pre>
+            <div style="background-color: #ffffe6;">
+                <p><i>TIP: i++ betekent eigenlijk i = i + 1</i></p>
+            </div>
+            <p>Dit zal alerten:</p>
+            <pre><code class="language-javascript">0
+1
+2
+3</code></pre>
+            <h3>While</h3>
+            <p>De while loop is geactiveert als het gene wat tussen de () waar (<code class="language-javascript">true</code>) is</p>
+            <p>Voor de duidelijkheid:</p>
+            <p><i>We maken de for loop na.</i></p>
+            <pre><code class="language-javascript">var i = 1;
+while(i <= 3){alert(i)
+i++}</code></pre>
+            <p>Dit is eigenlijk gewoon:</p>
+            <pre><code class="language-javascript">var i;
+for(i = 0; i <= 3; i++){alert(i)}</code></pre>
+            <p>Want hier alert het ook gewoon:</p>
+            <pre><code class="language-javascript">0
+1
+2
+3</code></pre>
         </div>
         <script>
             function p2(){
@@ -156,7 +198,8 @@ if (MyVar > 0 && MyVar == 1){alert('Jep')} //alerts 'Jep'</code></pre>
                 document.getElementById("P6").style.display = "block"
             }
             function p7(){
-                
+                document.getElementById("P6").style.display = "none"
+                document.getElementById("P7").style.display = "block"
             }
         </script>
     </body>
