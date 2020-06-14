@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism.css" rel="stylesheet" />
+        </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/components/prism-core.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    
+        <div id="P1" style="font-family: Arial, Helvetica, sans-serif;">
+            <p>Hallo!</p>
+            <p>Dit is een javascript tutorial.</p>
+            <div style="font-family: Arial, Helvetica, sans-serif; font-size: 200%;">
+                <p><b>Waarom javascript?</b></p>
+            </div>
+            <p>javascript is een heel leuke taal. Je kan er websites mee maken.</p>
+            <p>Klik op <button onclick="p2()">Ga verder</button> Om verder te gaan</p>
+        </div>
+        <div id="P2", style="display: none; font-family: Arial, Helvetica, sans-serif;">
+            <div style="font-size: 200%;">
+                <p><b>Hallo!</b></p>
+            </div>
+            <p>Je kan met javascript tekst op het scherm laten verschijnen.</p>
+            <p>Dat doe je met de alert()</p>
+            <div>
+                <pre><code class="language-javascript">alert("hallo")</code></pre>
+                <button onclick="alert('hallo')">Test deze code</button>
+            </div>
+
+
+            <button onclick="p3()">Ga verder</button>
+        </div>
+        <div id="P3" style="font-family: Arial, Helvetica, sans-serif; display: none;">
+            <div style="font-size: 200%;">
+                <p><b>Variabelen</b></p>
+            </div>
+            <p>Variabelen defineer je zo:</p>
+            <pre><code class="language-javascript">var Je_variabele = 4;</code></pre>
+            <p>De waarde is nu 4. In variabelen mogen geen spaties komen</p>
+            <p>Variabelen kun je ook zo defineren; maar dan is de waarde 'undefined'</p>
+            <pre><code class="language-javascript">var Je_variabele;</code></pre>
+            <p>Je hebt 3 dingen soorten waardes:</p>
+            <pre><code class="language-javascript">var Je_variabele;
+Je_variabele = true
+Je_variabele = false
+Je_variabele = "Dit is een string"
+Je_variabele = 5</code></pre>
+            <p>Een boolean is 'true' of 'false'. (waar of niet waar) Een string zit altijd tussen "" of ''</p>
+            <p>Een integer is een getal. Je kan een variabele ook laten verschijnen.</p>
+            <pre><code class="language-javascript">var variabele = 1;
+alert(variabele);</code></pre>
+            <button onclick="alert(1)">Test deze code</button>
+            <p></p>
+            <button onclick="p4()">Volgende</button>
+        </div>
+        <div id="P4" style="display: none; font-family: Arial, Helvetica, sans-serif;">
+            <div style="font-size: 200%;">
+                <p><b>Arrays</b></p>
+            </div>
+            <p>Een array is een lijst; je kan er meerdere waardes in stoppen.</p>
+            <p>Een array is eigenlijk een soort variabele.</p>
+            <p>Zo defineer je een array:</p>
+            <pre><code class="language-javascript">var MijnArray = [1, 2, 3];</code></pre>
+            <p>Zo verwijder je items en voeg je items toe:</p>
+            <pre><code class="language-javascript">var MijnArray = [1, 2, 3];
+MijnArray.pop(); //[1, 2]
+MijnArray.push(3); //[1, 2, 3]
+MijnArray.shift(); //[2, 3]
+MijnArray.unshift(1); //[1, 2, 3]
+alert(MijnArray);</code></pre>
+            <button onclick="alert([1, 2, 3])">Test deze code</button>
+            <p></p>
+            <button onclick="p5()">Volgende</button>
+        </div>
+        <div id="P5" style="font-family:Arial, Helvetica, sans-serif; display: none;">
+            <div style="font-size: 200%">
+                <p><b>If & Else</b></p>
+            </div>
+            <p>Om te detecteren of iets waar is, gebruik je if.</p>
+            <pre><code class="language-javascript">if () {}</code></pre>
+            <p>In de () typ je in <b>wat</b> je moet detecteren. In de {} als de () waar is, <b>doe dit.</b></i></p>
+            <p><b>Stel:</b>
+            Je hebt een variabele, en je wilt weten of dat 5 is, zoja: alert "Yes!"
+            Doe dat zo:</p>
+            <pre><code class="language-javascript">var MijnVar = 5;
+if (MijnVar == 5){
+alert("Yes!")}</code></pre>
+            <button onclick="alert('Yes!')">Test deze code</button>
+            <p>Zo detecteer je andere dingen:</p>
+            <div style="background-color: #ffffe6;">
+                <p><i>TIP: het isje (=) moet altijd op het eind.</i></p>
+            </div>
+            <p>!= Is niet ...</p>
+            <p><= is of lager dan</p>
+            <p>>= is of hoger dan</p>
+            <p>> hoger dan</p>
+            <p>< lager dan</p>
+            <p>|| of</p>
+            <p>&& en</p>
+            <p>% modulo</p>
+            <p><b>Voorbeelden</b></p>
+            <pre><code class="language-javascript">var MyVar = 1;
+if (MyVar != 2){alert('Jep')} //alerts 'Jep'</code></pre>
+            <pre><code class="language-javascript">var MyVar = 1;
+if (MyVar <= 4){alert('Jep')} //alerts 'Jep'</code></pre>
+            <pre><code class="language-javascript">var MyVar = 1;
+if (MyVar >= 0){alert('Jep')} //alerts 'Jep'</code></pre>
+            <pre><code class="language-javascript">var MyVar = 1;
+if (MyVar <= 1){alert('Jep')} //alerts 'Jep'</code></pre>
+            <pre><code class="language-javascript">var MyVar = 1;
+if (MyVar >= 1){alert('Jep')} //alerts 'Jep'</code></pre>
+        </div>
+        <script>
+            function p2(){
+                document.getElementById("P1").style.display = "none"
+                document.getElementById("P2").style.display = "block"
+            }
+            function p3(){
+                document.getElementById("P2").style.display = "none"
+                document.getElementById("P3").style.display = "block"
+            }
+            function p4(){
+                document.getElementById("P3").style.display = "none"
+                document.getElementById("P4").style.display = "block"
+            }
+            function p5(){
+                document.getElementById("P4").style.display = "none"
+                document.getElementById("P5").style.display = "block"
+            }
+        </script>
+    </body>
+</html>
