@@ -1,8 +1,8 @@
 <html>
     <head>
         <link href="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism.css" rel="stylesheet" />
-        </head>
-    <body onload="p6()">
+    </head>
+    <body>
         <script src="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/components/prism-core.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"></script>
     
@@ -21,12 +21,9 @@
             </div>
             <p>Je kan met javascript tekst op het scherm laten verschijnen.</p>
             <p>Dat doe je met de alert()</p>
-            <div>
                 <pre><code class="language-javascript">alert("hallo")</code></pre>
                 <button onclick="alert('hallo')">Test deze code</button>
-            </div>
-
-
+            <p></p>
             <button onclick="p3()">Ga verder</button>
         </div>
         <div id="P3" style="font-family: Arial, Helvetica, sans-serif; display: none;">
@@ -50,7 +47,7 @@ Je_variabele = 5</code></pre>
 alert(variabele);</code></pre>
             <button onclick="alert(1)">Test deze code</button>
             <p></p>
-            <button onclick="p4()">Volgende</button>
+            <button onclick="p4()">Ga verder</button>
         </div>
         <div id="P4" style="display: none; font-family: Arial, Helvetica, sans-serif;">
             <div style="font-size: 200%;">
@@ -69,7 +66,7 @@ MijnArray.unshift(1); //[1, 2, 3]
 alert(MijnArray);</code></pre>
             <button onclick="alert([1, 2, 3])">Test deze code</button>
             <p></p>
-            <button onclick="p5()">Volgende</button>
+            <button onclick="p5()">Ga verder</button>
         </div>
         <div id="P5" style="font-family:Arial, Helvetica, sans-serif; display: none;">
             <div style="font-size: 200%">
@@ -120,10 +117,22 @@ if (MyVar > 0 && MyVar == 1){alert('Jep')} //alerts 'Jep'</code></pre>
         <div id="P6" style="font-family:Arial, Helvetica, sans-serif; display: none;">
             <h1>Expressies</h1>
         
-            <p>
-                <i>Expressies</i> zijn stukjes code die waar (<code class="language-javascript">true</code>) of onwaar (<code
-                    class="language-javascript">false</code>) zijn.
-            </p>
+            <p><i>Expressies</i> zijn stukjes code die waar (<code class="language-javascript">true</code>) of onwaar (<code class="language-javascript">false</code>) zijn.</p>
+            <p>Een expressie is bijvoorbeeld 1 + 1 == 2. Dit is <code class="language-javascript">true</code>.</p>
+            <p>Zo gebruik je expressies:</p>
+            <pre><code class="language-javascript">if (1 + 1 == 2){alert('Basis wiskunde')}</code></pre>
+            <button onclick="alert('Basis wiskunde')">Test deze code</button>
+            <p>Maar niet alleen ... + ... == ... is een expressie, ook dit zijn expressies:</p>
+            <p>Delen: gebruik /</p>
+            <pre><code class="language-javascript">alert(10 / 2) //5</code></pre>
+            <p>Vermenigvuldigen: gebruik *</p>
+            <pre><code class="language-javascript">alert(20 * 1) //20</code></pre>
+            <p>Resten: gebruik %</p>
+            <pre><code class="language-javascript">alert(21 % 2) //1</code></pre>
+            <p>Aftrekken: gebruik -</p>
+            <pre><code class="language-javascript">alert(21 - 2) //19</code></pre>
+            <p>Machtsverheffen: gebruik **</p>
+            <pre><code class="language-javascript">alert(3 ** 2) //9</code></pre>        
         </div>
         <script>
             function p2(){
@@ -145,6 +154,9 @@ if (MyVar > 0 && MyVar == 1){alert('Jep')} //alerts 'Jep'</code></pre>
             function p6(){
                 document.getElementById("P5").style.display = "none"
                 document.getElementById("P6").style.display = "block"
+            }
+            function p7(){
+                
             }
         </script>
     </body>
